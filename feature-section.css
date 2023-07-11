@@ -1,0 +1,36 @@
+.feature-section{
+    list-style-type: none;
+    display:list-item;
+    text-align:webkit-match-parent;
+    text-align:center;
+    background-color:var(--contrast);    
+    padding-top:5%;
+    padding-bottom:5%;
+}
+
+.feature-section h1{
+    display:block;
+    justify-items: center;        
+    padding:10px;
+}
+
+.card{    
+    padding-top:5%;
+}
+
+table img, td{
+    flex:1;
+    align-items:center;
+    list-style-type: none;
+    width:265px;
+}
+table td{
+    border:2px;
+    border-color: var(--fresh);
+    border-radius:2px;
+}
+table p{
+    margin-left:40px;
+    margin-right:40px;
+    text-align:left;
+}

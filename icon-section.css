@@ -1,0 +1,25 @@
+.icon-section{
+    text-align:webkit-match-parent;
+    text-align:center;
+    padding-top:5%;
+    padding-bottom: 5%;
+}
+
+.icon-img{
+    margin-top:15%;
+    margin-left:0;
+    width:40px;
+}
+  
+.card-icon p{
+    margin-left:40px;
+    margin-right:40px;
+    text-align: center;
+}
+  
+.card-icon {
+    padding: 1%;
+    margin-left:20%;
+    padding-right:10%;
+    justify-items: center;
+}

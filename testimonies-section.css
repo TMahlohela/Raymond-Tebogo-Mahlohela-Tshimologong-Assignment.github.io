@@ -1,0 +1,54 @@
+.testimonies-section{    
+    display:list-item;
+    align-items: center;
+    flex:1;
+    width:100%;
+    overflow:hidden;
+    padding-top:5%;
+}
+
+.testimonies-section h1{
+    text-align:center;
+}
+
+.testimonies-section h4{
+    width:max-content;
+    display:flex;
+}
+
+.testimonies-section tr{
+    float:left;
+    width:55%;
+}
+
+.testimonies-section td{
+    width:75px;
+}
+
+.testimonies-section p{
+    margin:0px;
+    width:700px;
+    font-size: small;
+}
+
+.testimonies-section-table{    
+    display:flex;
+    justify-items: center;
+    padding-left:20%;
+    width:100%;    
+    margin-bottom:10%;
+}
+
+.sm-icon{
+    width:32px;
+}
+
+.sm-icon-git{
+    width:32px;
+    border-radius:50%;
+}
+
+.sm-avatar{    
+    width:100px;
+    border-radius:50%;
+}
