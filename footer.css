@@ -1,104 +1,69 @@
-.footer{
+.footer{    
     width:100%;
     display:flex;
     overflow:hidden;
+    padding:10px;
     background-color:var(--contrast);
 }
 
-.footer-ico td{
-    font-family: 'Inter', sans-serif;
-	list-style:none;
-	text-decoration:none;
-    justify-content:flex-start;
-    padding:10px;
+.footer__logo{
+    flex:1;
+    display:flex;
+    width: 65px;
+    height:65px;
+    border-radius: 10px;
+    margin: 15%;
 }
 
-.sm-icon{    
-    filter: grayscale(100%);
-    width:50px;
-    padding:5px;
-    border-radius:50%;
-    opacity:0.45;
-}
-
-.sm-icon:hover {
-    color: var(--primary-color);
-    background-color: var(--secondary-color);
-    transition: 300ms ease-in-out;
-    border:none;
-    box-shadow: inset -2px -2px 3px var(--secondary-color), inset 3px 2px 2px rgba(100, 75, 100, .40 );
-  }
 
 .footer__menu{
     flex:1.2;
     display:flex;
     align-items:center;
-    justify-content:flex-end;
+    justify-content:center;
     list-style-type: none;
     z-index:5;
-    padding:5px;
 }
 
 .footer__menu a{
-    list-style:none;
-	text-decoration:none;
-    text-transform: uppercase;
-    padding:20px;
-    font-weight:350;
-    color: var(--primary-color);
+    color: #fff;
+}
+
+.footer__menu li{
+    font-weight:500;
+    color: #fff;
+    padding:10px;
     align-items:end;
     font-size:12px;
+    text-transform: uppercase;
     line-height:20px;
     border-radius: 3px;
     cursor: pointer;
     z-index:2;
-    width:12em;
 }
 
-.footer__menu a:hover {
+.footer__menu li:hover {
     
-    color: var(--primary-color);
-    background-color: var(--secondary-color);
+    color: #fff;
+    background-color: var(--hover-cyan);
     transition: 750ms ease-in-out;
-    box-shadow: inset -2px -2px 3px var(--secondary-color), inset 3px 2px 2px rgba(100, 75, 100, .40 );
+    box-shadow: inset -2px -2px 3px #ffffff73, inset 3px 2px 2px rgba(100, 75, 100, .40 );
 }
 
-@media only screen and (max-width: 705px){
-    .sm-icon{        
-		width:25px;
-        padding:2px;
-    }
+.sm-icon{
+    width:32px;
 }
 
-@media only screen and (max-width:705px){
-    .footer__menu li{
-        text-align:end; 
-    }
+.sm-icon-git{
+    width:32px;
+    border-radius:50%;
 }
 
-@media only screen and (max-width:705px){
-    .sub-button-footer{
-        display: none;
-    }
+.sm-avatar{    
+    width:100px;
+    border-radius:50%;
 }
 
-.sub-button-footer{
-    margin-bottom: 10px;
-    margin:20px;
-    margin-right:4em;
-    width:12em;
-    padding:1em;
-    border-style:solid;
-    border-width: 1px;
-    text-transform:uppercase;
-    color:var(--primary-color);
-    background-color: transparent;
-}
-
-.sub-button-footer:hover {
-    color: var(--primary-color);
-    background-color: var(--secondary-color);
-    transition: 300ms ease-in-out;
-    border:none;
-    box-shadow: inset -2px -2px 3px var(--secondary-color), inset 3px 2px 2px rgba(100, 75, 100, .40 );
+.footer td{ 
+    width: 75px;
 }
