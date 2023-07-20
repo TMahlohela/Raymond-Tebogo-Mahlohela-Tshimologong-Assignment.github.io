@@ -2,27 +2,38 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="header.css"/>
-    <link rel="stylesheet" href="hero.css"/>
-    <link rel="stylesheet" href="icon-section.css"/>
-    <link rel="stylesheet" href="feature-section.css"/>
-    <link rel="stylesheet" href="testimonies-section.css"/>
-    <link rel="stylesheet" href="footer.css"/>
-    <link rel="icon" type="image/png" href="ind-logo.png"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta name="keywords" content="Alafang,Medical,Suppliers, Supplies and Technology">
+    <meta name="description" content="Medical Suppliers and Technology">
+    <meta name="author" content="Alafang Medical Suppliers">
+    <!--Chrome, Firefox, & Opera browser compatibility-->
+    <meta name="theme-color" content="#80c5c5">
+    <!--Windows phone-->
+    <meta name="msapplication-navbutton-color" content="#80c5c5">
+    <!--Safari & IOS-->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/sections/header.css"/>
+    <link rel="stylesheet" href="css/sections/hero.css"/>
+    <link rel="stylesheet" href="css/sections/icon-section.css"/>
+    <link rel="stylesheet" href="css/sections/feature-section.css"/>
+    <link rel="stylesheet" href="css/sections/testimonies-section.css"/>
+    <link rel="stylesheet" href="css/sections/footer.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" type="image/png" href="/assets/ind-logo.png"/>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter&display=swap">
     <title>Indigenous</title>
   </head>
   <body>
+    
     <header>
       <nav class="header__nav">
         <a href="#index">
           <div class="header__logo">
-            <img src="valleys.jpg" alt="Indigenous" title="home"/>
+            <img src="assets/valleys.jpg" alt="Indigenous" title="home"/>
           </div>
         </a>
         <div class="header__logo-overlay"></div>
@@ -41,16 +52,19 @@
 
         <ul class="header__button-index">
           <button class="header__button">Menu</button>
-            <div class="dropdown__items">
-              <a href="#HeroSection">Hero Section</a>
-              <a href="#FeatureContent">Feature Content</a>
-              <a href="#FeatureSection">Feature Section</a>
-              <a href="#TestimoniesSection">Testimonies Section</a>
-              <a href="#Footer">Footer</a>
+          <div class="dropdown__items">
+            <a href="#heroSection">Hero Section</a>
+            <a href="#featureContent">Feature Content</a>
+            <a href="#featureSection">Feature Section</a>
+            <a href="#testimoniesSection">Testimonies Section</a>
+            <a href="#footer">Footer</a>
+          </div>
         </ul>
       </nav>
     </header>
+
     
+
     <section class="hero">
       <div class="hero-content">
         <div class="hero-content-info">
@@ -60,38 +74,25 @@
           <button onclick="hero_opinion_no" class="hero-content-button" id="disabled" title="Disagree with the article" disabled>Disagree</button>
         </div>
         <div class="hero-content-info">
-          <img id="hero-image" src="great-rift-valley-search-of-life.jpg" alt="search-of-life-great-african-rift-valley" title="great-rift-valley-search-of-life" usemap="#hero-rift-map"/>
-          
-          <!--By clicking on the mapped rift-valley section in the image, you are directed to the site of the article-->
+          <img id="hero-image" src="assets/great-rift-valley-search-of-life.jpg" alt="search-of-life-great-african-rift-valley" title="great-rift-valley-search-of-life" usemap="#hero-rift-map"/>
           <map name="hero-rift-map">
-            <area href="https://searchoflife.com/the-great-rift-valley-2014-03-22" target="_blank" alt="searchoflife.com artitcle" title="Click here to continue with article | searchoflife.com" href="" coords="312,50,332,56,336,63,351,63,377,63,361,69,376,73,396,74,393,79,413,82,427,84,442,88,444,94,421,97,404,98,402,106,415,112,421,122,399,132,382,139,375,148,388,150,404,155,455,202,440,244,399,284,387,300,2,300,1,230,37,230,75,223,164,192,186,179,219,172,194,159,214,136,250,126,275,121,283,117,273,110,262,100,280,94,302,94,327,91,344,91,355,87,342,81,333,79,325,75,310,70,300,65,328,64,318,58,308,55,299,52" shape="poly">
-          </map>
-
-          <!--modal box-->
-          <!--<div id="myModal" class="modal">
-            <span class="close-button" onclick="closeModal()">&times;</span>
-            <div class="modal-content">
-              <img id="hero-image" onclick="openModal()" src="assets/great-rift-valley-search-of-life.jpg" alt="search-of-life-great-african-rift-valley" title="great-rift-valley-search-of-life" usemap="#hero-rift-map"/>
-              <map name="hero-rift-map">
-                <area href="https://searchoflife.com/the-great-rift-valley-2014-03-22" target="_blank" alt="searchoflife.com aritcle" title="Click here to continue with article | searchoflife.com" href="" coords="312,50,332,56,336,63,351,63,377,63,361,69,376,73,396,74,393,79,413,82,427,84,442,88,444,94,421,97,404,98,402,106,415,112,421,122,399,132,382,139,375,148,388,150,404,155,455,202,440,244,399,284,387,300,2,300,1,230,37,230,75,223,164,192,186,179,219,172,194,159,214,136,250,126,275,121,283,117,273,110,262,100,280,94,302,94,327,91,344,91,355,87,342,81,333,79,325,75,310,70,300,65,328,64,318,58,308,55,299,52" shape="poly">
-              </map>
-            </div>
-          </div>-->
+            <area href="https://searchoflife.com/the-great-rift-valley-2014-03-22" target="_blank" alt="searchoflife.com aritcle" title="Click here to continue with article | searchoflife.com" href="" coords="312,50,332,56,336,63,351,63,377,63,361,69,376,73,396,74,393,79,413,82,427,84,442,88,444,94,421,97,404,98,402,106,415,112,421,122,399,132,382,139,375,148,388,150,404,155,455,202,440,244,399,284,387,300,2,300,1,230,37,230,75,223,164,192,186,179,219,172,194,159,214,136,250,126,275,121,283,117,273,110,262,100,280,94,302,94,327,91,344,91,355,87,342,81,333,79,325,75,310,70,300,65,328,64,318,58,308,55,299,52" shape="poly">
+          </map>          
         </div>
       </div>
     </section>
-
+    
     <section class="icon-section">
-      <table class="card-icon" id="FeatureContent">
+      <table class="card-icon" id="featureContent">
         <tr>
           <td>
-            <img class="icon-img" src="Displacement_Event_Management.png" alt="displacement_event_management" title="Displacement_Event_Management"/>
+            <img class="icon-img" src="assets/Displacement_Event_Management.png" alt="displacement_event_management" title="Displacement_Event_Management"/>
           </td>
           <td>
-            <img class="icon-img" src="Contingency.png" alt="contingency-plan" title="future-contingency-plan"/>
+            <img class="icon-img" src="assets/Contingency.png" alt="contingency-plan" title="future-contingency-plan"/>
           </td>
           <td>  
-            <img class="icon-img" src="strategy_clipboard.png" alt="strategies-for-aid-and-relief" title="Strategies-For-Aid-And-Relief"/>
+            <img class="icon-img" src="assets/strategy_clipboard.png" alt="strategies-for-aid-and-relief" title="Strategies-For-Aid-And-Relief"/>
           </td>
         </tr>
         <tr>
@@ -110,7 +111,7 @@
             <p>The potential displacement and official record documentation of a large group of ethnic people across various countries.</p>
           </td>
           <td>
-            <p>Contingency plans to mitigate the risks associated with the problem/s or making further plans and arrangements necessary.</p>
+            <p>Contingency plans to mitigate the risks associated to problem/s or making further plans and arrangements necessary.</p>
           </td>
           <td>
             <p>By designing and putting plans and strategies into account, companies, governments, and individuals are able to limit the damage.</p>
@@ -121,22 +122,22 @@
 
     <section class="feature-section">
       <div>
-        <h1 id="FeatureSection">A view of The Great Rift Valley</h1>      
-        <p>In the following graphical representation of The Great Rift Valley,<br> we aim to explore this geographic anomaly.<br> Included in the presentation are associated articles <br>for comprehensive reference and further analysis.</p>
+        <h1 id="featureSection">A view of The Great Rift Valley</h1>      
+        <p>In the follwoing graphical represntation of The Great Rift Valley,<br> we aim to explore this geographic anomally.<br> Included in the presentation are associated articles <br>for comprehensive reference and further analysis.</p>
       </div>
       <table class="card">
         <tr>
           <td>
-            <img src="Grieta-Kenia-3-youth-village.jpg" alt="Kenya-rift-valley" title="Rift Valley town of Mai Mahiu, Kenya March 28, 2018. Picture taken March 28, 2018. REUTERS/Thomas Mukoya"/>
+            <img src="assets/Grieta-Kenia-3-youth-village.jpg" alt="Kenya-rift-valley" title="Rift Valley town of Mai Mahiu, Kenya March 28, 2018. Picture taken March 28, 2018. REUTERS/Thomas Mukoya"/>
           </td>
           <td>
-            <img src="GettyImages-126545161-59bd3b81af5d3a0010c66b38-thought-co.png" alt="Mount-Kilimanjaro" title="Mount Kilimanjaro that was formed by The Great African Rift Valley"/>
+            <img src="assets/GettyImages-126545161-59bd3b81af5d3a0010c66b38-thought-co.png" alt="Mount-Kilimanjaro" title="Mount Kilimanjaro that was formed by The Great African Rift Valley"/>
           </td>
           <td>  
-            <img src="ISS030-E-035487-earth-observatory.jpg" alt="NASA-earth-observatory" title="NASA-earth-observatory-ISS-digital-space-rift-valley"/>
+            <img src="assets/ISS030-E-035487-earth-observatory.jpg" alt="NASA-earth-observatory" title="NASA-earth-observatory-ISS-dgital-space-rift-valley"/>
           </td>
           <td>
-            <img src="lake-thingvallavatn-nat-geo.jpg" alt="EMORY KRISTOF, NATIONAL GEOGRAPHIC" title="The Thingvellir Rift"/>
+            <img src="assets/lake-thingvallavatn-nat-geo.jpg" alt="EMORY KRISTOF, NATIONAL GEOGRAPHIC" title="The Thingvellir Rift"/>
           </td>
         </tr>
         <tr>
@@ -161,7 +162,7 @@
             <p>Mount Kilimanjaro was formed from the Great Rift Valley. Richard Packwood/Getty Images</p>
           </td>
           <td>
-            <p>It is one of the great tectonic features of Africa—caused by the fracturing of the Earth’s crust—and includes the classical geologic structures associated with a rift valley. Image of the Day for April 2, 2012</p>
+            <p>It is one of the great tectonic features of Africa—caused by fracturing of the Earth’s crust—and includes the classical geologic structures associated with a rift valley. Image of the Day for April 2, 2012</p>
           </td>
           <td>
             <p>The Thingvellir rift grows about 1 centimeter (.4 inch) every year</p>
@@ -185,7 +186,7 @@
     </section>
 
     <section class="testimonies-section">
-      <h1 id="TestimoniesSection">Testimonies</h1>
+      <h1 id="testimoniesSection">Testimonies</h1>
       <table class="testimonies-section-table">
         <tr>
           <td>
@@ -199,38 +200,37 @@
         </tr>
         <tr>
           <td>
-            <p>Exceptional best standard exemplified by clean coding that teams can work on as part of DevOps and/or pair programming (XP) to produce leading solutions for companies, organizations, and clients. Efficient maintenance through repositories.</p>
+            <p>Exceptional best standard exemplified by clean coding that teams can work on as part of DevOps and/or pair programming (XP) to produce leading solutions for company, organizations and clients. Efficient maintenence through repositories.</p>
           </td>
           <td>
-            <img class="sm-avatar" src="Tebogo.jpeg" alt="tebogo-profile" title="garv-testimony-avatar">
+            <img class="sm-avatar" src="assets/Tebogo.jpeg" alt="tebogo-profile" title="garv-testimony-avatar">
           </td>
         </tr>
         <tr>
           <td>
             <a href="https://wa.me/+27813530972?text=Hi%2C+Can+we+chat%3F" target="_blank">
-              <img class="sm-icon" src="WhatsApp.ico" alt="WhatsApp-link-to-chat-to-tebogo" title="Chat to me">
+              <img class="sm-icon" src="assets/WhatsApp.ico" alt="whatsapp-link-to-chat-to-tebogo" title="Chat to me">
             </a>            
           </td>
           <td>
             <a href="https://www.linkedin.com/in/raymond-tebogo-mahlohela/" target="_blank">
-              <img class="sm-icon" src="LinkedIn.ico" alt="LinkedIn-link" alt="tebogo-LinkedIn" title="Connect with me">
+              <img class="sm-icon" src="assets/LinkedIn.ico" alt="linkein-link" alt="tebogo-linkedin" title="Connect with me">
             </a>            
           </td>
           <td>
             <a href="https://github.com/RayMahlohela">
-              <img class="sm-icon sm-icon-git" src="github-icon.png" alt="tebogo-github" title="Tebogo GitHub Repository">
+              <img class="sm-icon sm-icon-git" src="assets/github-icon.png" alt="tebogo-github" title="Tebogo GitHub Repository">
             </a>
           </td>
         </tr>
       </table>
-
     </section>
     
-    <section class="footer" id="Footer">
+    <section class="footer" id="footer">
       <div>
         <a href="#index">
           <div class="footer__logo">
-            <img src="valleys.jpg" alt="Indigenous" title="home"/>
+            <img src="assets/valleys.jpg" alt="Indigenous" title="home"/>
           </div>
         </a>
       </div>
@@ -251,23 +251,23 @@
         <tr>
           <td>
             <a href="https://wa.me/" target="_blank">
-              <img class="sm-icon" src="WhatsApp.ico" alt="whatsapp-landing-page" title="whatsapp-landing-page">
+              <img class="sm-icon" src="assets/WhatsApp.ico" alt="whatsapp-landing-page" title="whatsapp-landing-page">
             </a>
           </td>
           <td>
             <a href="https://www.linkedin.com/" target="_blank">
-              <img class="sm-icon" src="LinkedIn.ico" alt="linkein-link" title="linkedin-landing-page">
+              <img class="sm-icon" src="assets/LinkedIn.ico" alt="linkein-link" title="linkedin-landing-page">
             </a>            
           </td>
           <td>
             <a href="https://github.com/" target="_blank">
-              <img class="sm-icon sm-icon-git" src="github-icon.png" title="github-landing-page">
+              <img class="sm-icon sm-icon-git" src="assets/github-icon.png" title="github-landing-page">
             </a>
           </td>
         </tr>
       </table>
     </section>
 
-    <script src="script.js"></script>
+    <script src="js/script.js" type="module"></script>
   </body>
 </html>
