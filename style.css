@@ -18,8 +18,8 @@
   --minty:rgb(121, 250, 222);
   --fresh:#00be85;
   --dreen:rgb(147, 251, 2);
-  --heading-color:f1f1f1;
-  --article-color:f1f1f1;
+  --heading-color:#f1f1f1;
+  --article-color:#f1f1f1;
 }
 body{
   margin:0px;
